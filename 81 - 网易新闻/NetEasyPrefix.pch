@@ -1,0 +1,40 @@
+//
+//  NetEasyPrefix.pch
+//  81 - 网易新闻
+//
+//  Created by dongshangxian on 16/1/22.
+//  Copyright © 2016年 ShangxianDante. All rights reserved.
+//
+
+#ifndef NetEasyPrefix_pch
+#define NetEasyPrefix_pch
+
+#define sxcolor [UIColor redColor]
+
+#ifdef __OBJC__
+
+#import "SXHTTPManager.h"
+#import "SXEasyMacro.h"
+#import "UIView+Frame.h"
+#import <MJRefresh/MJRefresh.h>
+#import "UIImageView+WebCache.h"
+#import <MJExtension/MJExtension.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kBLTraceTree            @"TraceTree"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// NSURLProtocolHTTPHeader used for filter request by BLNSURLConnection
+#define kBlueWareURLProtocolHTTPHeader @"BlueWareURLProtocolHTTPHeader"
+
+#define KBlueWareMetircNotification @"BlueWareMetircNotification"
+
+
+#endif /* NetEasyPrefix_pch */
