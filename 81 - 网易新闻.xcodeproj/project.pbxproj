@@ -75,6 +75,15 @@
 		320C66841CEF19340042B95B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 320C66831CEF19340042B95B /* Podfile */; };
 		322C1E4C1CF308940059F345 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 322C1E4A1CF306D20059F345 /* libReveal.dylib */; };
 		32337B811D07FB74005AFF87 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32337B801D07FB74005AFF87 /* Security.framework */; };
+		325C2CF51D08117F0008851E /* HelpshiftLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CBC1D08117F0008851E /* HelpshiftLocalizable.strings */; };
+		325C2CF61D08117F0008851E /* ensure_no_duplicates.sh in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CC61D08117F0008851E /* ensure_no_duplicates.sh */; };
+		325C2CF71D08117F0008851E /* HelpshiftConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CED1D08117F0008851E /* HelpshiftConfig.plist */; };
+		325C2CF81D08117F0008851E /* HelpshiftConfigDark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CEE1D08117F0008851E /* HelpshiftConfigDark.plist */; };
+		325C2CF91D08117F0008851E /* HsUIResourceBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CEF1D08117F0008851E /* HsUIResourceBundle.bundle */; };
+		325C2CFC1D08117F0008851E /* libHelpshift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CF21D08117F0008851E /* libHelpshift.a */; };
+		325C2CFD1D08117F0008851E /* Release-5.6.1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CF31D08117F0008851E /* Release-5.6.1.txt */; };
+		325C2CFE1D08117F0008851E /* OneAPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CF41D08117F0008851E /* OneAPM.framework */; };
+		325C2D001D0811C00008851E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CFF1D0811C00008851E /* libsqlite3.tbd */; };
 		985E301D6D5C50839099468D /* Pods_81_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB98346364F0057685A34CD /* Pods_81_______.framework */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +217,66 @@
 		320C66831CEF19340042B95B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		322C1E4A1CF306D20059F345 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
 		32337B801D07FB74005AFF87 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		325C2CB51D08117F0008851E /* Helpshift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpshift.h; sourceTree = "<group>"; };
+		325C2CB61D08117F0008851E /* HelpshiftAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpshiftAll.h; sourceTree = "<group>"; };
+		325C2CB71D08117F0008851E /* HelpshiftCampaigns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpshiftCampaigns.h; sourceTree = "<group>"; };
+		325C2CB81D08117F0008851E /* HelpshiftCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpshiftCore.h; sourceTree = "<group>"; };
+		325C2CB91D08117F0008851E /* HelpshiftInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpshiftInbox.h; sourceTree = "<group>"; };
+		325C2CBA1D08117F0008851E /* HelpshiftSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpshiftSupport.h; sourceTree = "<group>"; };
+		325C2CBD1D08117F0008851E /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CBE1D08117F0008851E /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CBF1D08117F0008851E /* bn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bn; path = bn.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC01D08117F0008851E /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC11D08117F0008851E /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC21D08117F0008851E /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC31D08117F0008851E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC41D08117F0008851E /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC51D08117F0008851E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC61D08117F0008851E /* ensure_no_duplicates.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ensure_no_duplicates.sh; sourceTree = "<group>"; };
+		325C2CC71D08117F0008851E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC81D08117F0008851E /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CC91D08117F0008851E /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CCA1D08117F0008851E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CCB1D08117F0008851E /* gu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gu; path = gu.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CCC1D08117F0008851E /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CCD1D08117F0008851E /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CCE1D08117F0008851E /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CCF1D08117F0008851E /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD01D08117F0008851E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD11D08117F0008851E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD21D08117F0008851E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD31D08117F0008851E /* kn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kn; path = kn.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD41D08117F0008851E /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD51D08117F0008851E /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD61D08117F0008851E /* ml */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ml; path = ml.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD71D08117F0008851E /* mr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mr; path = mr.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD81D08117F0008851E /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CD91D08117F0008851E /* nb-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nb-NO"; path = "nb-NO.lproj/HelpshiftLocalizable.strings"; sourceTree = "<group>"; };
+		325C2CDA1D08117F0008851E /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CDB1D08117F0008851E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CDC1D08117F0008851E /* pa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pa; path = pa.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CDD1D08117F0008851E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CDE1D08117F0008851E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CDF1D08117F0008851E /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE01D08117F0008851E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE11D08117F0008851E /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE21D08117F0008851E /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE31D08117F0008851E /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE41D08117F0008851E /* ta */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ta; path = ta.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE51D08117F0008851E /* te */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = te; path = te.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE61D08117F0008851E /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE71D08117F0008851E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE81D08117F0008851E /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CE91D08117F0008851E /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/HelpshiftLocalizable.strings; sourceTree = "<group>"; };
+		325C2CEA1D08117F0008851E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/HelpshiftLocalizable.strings"; sourceTree = "<group>"; };
+		325C2CEB1D08117F0008851E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/HelpshiftLocalizable.strings"; sourceTree = "<group>"; };
+		325C2CED1D08117F0008851E /* HelpshiftConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelpshiftConfig.plist; sourceTree = "<group>"; };
+		325C2CEE1D08117F0008851E /* HelpshiftConfigDark.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelpshiftConfigDark.plist; sourceTree = "<group>"; };
+		325C2CEF1D08117F0008851E /* HsUIResourceBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HsUIResourceBundle.bundle; sourceTree = "<group>"; };
+		325C2CF21D08117F0008851E /* libHelpshift.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHelpshift.a; sourceTree = "<group>"; };
+		325C2CF31D08117F0008851E /* Release-5.6.1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Release-5.6.1.txt"; sourceTree = "<group>"; };
+		325C2CF41D08117F0008851E /* OneAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneAPM.framework; sourceTree = "<group>"; };
+		325C2CFF1D0811C00008851E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		5BBABE94DDC8CA87447CC869 /* Pods-81 - 网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.release.xcconfig"; sourceTree = "<group>"; };
 		5DB98346364F0057685A34CD /* Pods_81_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_81_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F12DD2AB3E5C00830E44487 /* Pods-81 - 网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,13 +287,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325C2D001D0811C00008851E /* libsqlite3.tbd in Frameworks */,
 				32337B811D07FB74005AFF87 /* Security.framework in Frameworks */,
 				1DA8BABC1C522E5F00D041C5 /* libstdc++.tbd in Frameworks */,
 				1DA8BABA1C522E5600D041C5 /* libz.tbd in Frameworks */,
+				325C2CFE1D08117F0008851E /* OneAPM.framework in Frameworks */,
 				1DA8BAB81C522E3200D041C5 /* CoreData.framework in Frameworks */,
 				1DA8BAB61C522E2800D041C5 /* CoreTelephony.framework in Frameworks */,
 				1DA8BAB41C522E1F00D041C5 /* SystemConfiguration.framework in Frameworks */,
 				985E301D6D5C50839099468D /* Pods_81_______.framework in Frameworks */,
+				325C2CFC1D08117F0008851E /* libHelpshift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +548,8 @@
 		1D2A58FC1A700822001F9B8E = {
 			isa = PBXGroup;
 			children = (
+				325C2CB41D08117F0008851E /* helpshift-sdk-ios-v5.6.1 */,
+				325C2CF41D08117F0008851E /* OneAPM.framework */,
 				322C1E4A1CF306D20059F345 /* libReveal.dylib */,
 				1DA8BABB1C522E5F00D041C5 /* libstdc++.tbd */,
 				1DA8BAB91C522E5600D041C5 /* libz.tbd */,
@@ -619,9 +693,46 @@
 			path = PhotoSet;
 			sourceTree = "<group>";
 		};
+		325C2CB41D08117F0008851E /* helpshift-sdk-ios-v5.6.1 */ = {
+			isa = PBXGroup;
+			children = (
+				325C2CB51D08117F0008851E /* Helpshift.h */,
+				325C2CB61D08117F0008851E /* HelpshiftAll.h */,
+				325C2CB71D08117F0008851E /* HelpshiftCampaigns.h */,
+				325C2CB81D08117F0008851E /* HelpshiftCore.h */,
+				325C2CB91D08117F0008851E /* HelpshiftInbox.h */,
+				325C2CBA1D08117F0008851E /* HelpshiftSupport.h */,
+				325C2CBB1D08117F0008851E /* HSLocalization */,
+				325C2CEC1D08117F0008851E /* HSThemes */,
+				325C2CEF1D08117F0008851E /* HsUIResourceBundle.bundle */,
+				325C2CF21D08117F0008851E /* libHelpshift.a */,
+				325C2CF31D08117F0008851E /* Release-5.6.1.txt */,
+			);
+			path = "helpshift-sdk-ios-v5.6.1";
+			sourceTree = "<group>";
+		};
+		325C2CBB1D08117F0008851E /* HSLocalization */ = {
+			isa = PBXGroup;
+			children = (
+				325C2CBC1D08117F0008851E /* HelpshiftLocalizable.strings */,
+				325C2CC61D08117F0008851E /* ensure_no_duplicates.sh */,
+			);
+			path = HSLocalization;
+			sourceTree = "<group>";
+		};
+		325C2CEC1D08117F0008851E /* HSThemes */ = {
+			isa = PBXGroup;
+			children = (
+				325C2CED1D08117F0008851E /* HelpshiftConfig.plist */,
+				325C2CEE1D08117F0008851E /* HelpshiftConfigDark.plist */,
+			);
+			path = HSThemes;
+			sourceTree = "<group>";
+		};
 		828A693D6CC672AA3871A1D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				325C2CFF1D0811C00008851E /* libsqlite3.tbd */,
 				32337B801D07FB74005AFF87 /* Security.framework */,
 				5DB98346364F0057685A34CD /* Pods_81_______.framework */,
 			);
@@ -651,6 +762,7 @@
 				1D2A59031A700822001F9B8E /* Resources */,
 				D899F925AB3EC3A996AF07B7 /* 📦 Embed Pods Frameworks */,
 				0AE1419AD43D49817B9BB779 /* 📦 Copy Pods Resources */,
+				320210101D0D0980008E6EBC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -706,6 +818,51 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				bg,
+				bn,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				es,
+				fa,
+				fi,
+				fr,
+				gu,
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				kn,
+				ko,
+				lv,
+				ml,
+				mr,
+				ms,
+				"nb-NO",
+				nb,
+				nl,
+				pa,
+				pl,
+				pt,
+				ro,
+				ru,
+				sk,
+				sl,
+				sv,
+				ta,
+				te,
+				th,
+				tr,
+				uk,
+				vi,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 1D2A58FC1A700822001F9B8E;
 			productRefGroup = 1D2A59061A700822001F9B8E /* Products */;
@@ -723,19 +880,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325C2CF81D08117F0008851E /* HelpshiftConfigDark.plist in Resources */,
 				322C1E4C1CF308940059F345 /* libReveal.dylib in Resources */,
 				1D2A59191A700822001F9B8E /* LaunchScreen.xib in Resources */,
 				1D1C4A3C1B7604C700CE3E01 /* SXWeatherDetailPage.xib in Resources */,
 				1DE822AC1C5875CC00E965C1 /* SXSearchListCell.xib in Resources */,
 				1D2A59161A700822001F9B8E /* Images.xcassets in Resources */,
 				1D58EED81A70C18000411E39 /* NewsURLs.plist in Resources */,
+				325C2CF61D08117F0008851E /* ensure_no_duplicates.sh in Resources */,
 				1D7B9F4F1B5E1EC000774BDA /* HYQiHei-50J.ttf in Resources */,
 				1DE822BA1C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib in Resources */,
 				1D2357761A80A4B2000C7AAC /* Main.storyboard in Resources */,
 				1D1C4A481B77259C00CE3E01 /* SXWeatherItemView.xib in Resources */,
+				325C2CFD1D08117F0008851E /* Release-5.6.1.txt in Resources */,
+				325C2CF91D08117F0008851E /* HsUIResourceBundle.bundle in Resources */,
 				1D25EA521C8D69EE009AFE2E /* SXDetails.css in Resources */,
 				1D58EECA1A709AE600411E39 /* News.storyboard in Resources */,
 				1D007F3D1B6C824D00EA119C /* SXWeatherView.xib in Resources */,
+				325C2CF71D08117F0008851E /* HelpshiftConfig.plist in Resources */,
+				325C2CF51D08117F0008851E /* HelpshiftLocalizable.strings in Resources */,
 				320C66841CEF19340042B95B /* Podfile in Resources */,
 				1D7DFD271CA0F3280084EC5B /* SXReplyHeader.xib in Resources */,
 			);
@@ -765,6 +928,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		320210101D0D0980008E6EBC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n# Copyright 2014-2016 Bugly, Tencent. All rights reserved.\n#\n# V1.2.1\n#\n# 2016.03.02\n#\n#\n################################################################################\n# # 注意: 请配置下面的信息\n################################################################################\n# BUGLY_APP_ID=\"900033812\"\n# BUGLY_APP_KEY=\"SnpMqh0qqnnRqQDt\"\n# BUNDLE_IDENTIFIER=\"com.sophia.netease.news\"\n################################################################################\n# # 自定义配置\n################################################################################\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n# UPLOAD_DEBUG_SYMBOLS=1\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n# UPLOAD_SIMULATOR_SYMBOLS=0\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n#\n#\n# This script will extract symbols from the .dSYM and generate .symbol file(Bugly supported) and upload to server.\n# You could visit http://bugly.qq.com to get more details about Bugly.(Optional: buylyweb.et.wsd.com)\n#\n# Usage:\n#   * The instructions assume you have copyed this script into your project int Xcode.\n#   * Copy the \"buglySymbolIOS.jar\" file into the \"~/bin\" folder.\n#   * Open the project editor, select your build target.\n#   * Click \"Build Phases\" at the top of the project editor.\n#   * Click \"+\" button in the top left corner and select \"New Run Script Phase\".\n#   * Click \"Run Script\".\n#   * Paste the following script into the dark text box. You will have to uncomment the lines (remove the #) of course.\n#\n# --- SCRIPT BEGINS ON NEXT LINE, COPY AND EDIT FROM THERE ---\n#\n#\n#\n# --- END OF SCRIPT ---\n\n\n################################################################################\n# 注意: 如果你不知道此脚本的执行流程和用法，请不要随便修改！\n################################################################################\n\n# 退出执行并打印提示信息\nexitWithMessage() {\n    echo \"--------------------------------\"\n    echo -e \"${1}\"\n    echo \"--------------------------------\"\n    echo \"No upload and exit.\"\n    echo \"----------------------------------------------------------------\"\n    exit ${2}\n}\n\necho \"----------------------------------------------------------------\"\necho \"Copyright 2014-2015 Bugly @Tencent. All rights reserved.\"\n\necho \"This script will extract symbols from the .dSYM file and generate .symbol file(Bugly supported) and upload to server.\"\necho \"You could visit http://bugly.qq.com to get more details about Bugly.\"\necho \"----------------------------------------------------------------\"\n\necho \"Uploading dSYM to Bugly.\"\necho \"\"\n\n# Bugly服务域名\nDSYM_UPLOAD_DOMAIN=\"bugly.qq.com\"\n\n# 读取Info.plist文件中的版本信息\necho \"Info.Plist : ${INFOPLIST_FILE}\"\n\nBUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\nBUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n# 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\nif [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\nBUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\nelse\nBUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\nfi\n\n# Bugly符号提取工具路径, 请确保buglySymboliOS.jar的路径是正确的\nBUGLY_SYMBOL_JAR_PATH=\"${SRCROOT}/dsymtool/buglySymboliOS.jar\"\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\necho \"--------------------------------\"\necho \"Step 1: Prepare application information.\"\necho \"--------------------------------\"\n\necho \"Product Name: ${PRODUCT_NAME}\"\necho \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\necho \"Version: ${BUNDLE_SHORT_VERSION}\"\necho \"Build: ${BUNDLE_VERSION}\"\n\necho \"Bugly App ID: ${BUGLY_APP_ID}\"\necho \"Bugly App key: ${BUGLY_APP_KEY}\"\necho \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\necho \"--------------------------------\"\necho \"Step 2: Check the arguments ...\"\n\n##检查模拟器编译是否允许上传符号\nif [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\nif [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否是Release模式编译\nif [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\nif [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\nexitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\nfi\nfi\n\n##检查是否Archive操作\nif [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\nif [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\necho \"Archive the package\"\nelse\nexitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\nfi\nfi\n\n# 检查必须参数是否设置\nif [ ! \"${BUGLY_APP_ID}\" ]; then\nexitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\nfi\nif [[ \"${BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\nexitWithMessage \"Error: Bugly App ID not defined.\" 0\nfi\n\nif [ ! \"${BUGLY_APP_KEY}\" ]; then\nexitWithMessage \"Error: Bugly APP Key not defined.\" 0\nfi\n\nif [ ! \"${BUNDLE_IDENTIFIER}\" ]; then\nexitWithMessage \"Error: Bundle Identifier not defined.\" 0\nfi\n\nfunction uploadDSYM {\n    DSYM_SRC=\"$1\"\n    echo \".dSYM file: ${DSYM_SRC}\"\n    if [ ! -d \"$DSYM_SRC\" ]; then\n    exitWithMessage \"dSYM source not found: ${DSYM_SRC}\" 0\n    fi\n    DSYM_FILE_NAME=${DSYM_SRC##*/}\n        DSYM_SYMBOL_OUT_ZIP_NAME=\"${DSYM_FILE_NAME}.bSymbol.zip\"\n        # 替换空格\n        DSYM_SYMBOL_OUT_ZIP_NAME=\"${DSYM_SYMBOL_OUT_ZIP_NAME// /_}\"\n        \n        # 声明符号表临时目录和备份目录\n        DSYM_ZIP_OUT_DIR=${BUILD_DIR}/BuglySymbolsTemp\n        DSYM_SYMBOL_BACKUP_DIR=${BUILD_DIR}/BuglySymbolsBackup\n        \n        if [ ! -e \"${DSYM_ZIP_OUT_DIR}\" ]; then\n        mkdir ${DSYM_ZIP_OUT_DIR}\n        fi\n        \n        if [ ! -e \"${DSYM_SYMBOL_BACKUP_DIR}\" ]; then\n        mkdir ${DSYM_SYMBOL_BACKUP_DIR}\n        fi\n        \n        # 备份并清理\n        find ${DSYM_ZIP_OUT_DIR} -name \"*.bSymbol.zip\" -print0 | xargs -0 -I {} mv {} ${DSYM_SYMBOL_BACKUP_DIR}\n        /bin/rm -rf \"${DSYM_ZIP_OUT_DIR}/*.bSymbol.zip\"\n        \n        DSYM_ZIP_FPATH=\"${DSYM_ZIP_OUT_DIR}/${DSYM_SYMBOL_OUT_ZIP_NAME}\"\n        \n        # 提取符号信息\n        echo \"--------------------------------\"\n        echo \"Step 3: Extract symbol info from .dSYM file. to ${DSYM_ZIP_FPATH}\"\n        \n        if [ ! -f \"$BUGLY_SYMBOL_JAR_PATH\" ]; then\n        exitWithMessage \"Error: Jar file '${BUGLY_SYMBOL_JAR_PATH}' was not found. \\nPlease copy the jar file into ~/bin folder.\" 1\n        fi\n        \n        echo \"--------------------------------\"\n        (/usr/bin/java -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_SRC}\" -o \"${DSYM_ZIP_FPATH}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n        echo \"--------------------------------\"\n        \n        if [ ! -e \"${DSYM_ZIP_FPATH}\" ]; then\n        DSYM_SYMBOL_OUT_ZIP_NAME=$(ls ${DSYM_ZIP_OUT_DIR} | grep \".bSymbol.zip\")\n        DSYM_ZIP_FPATH=\"${DSYM_ZIP_OUT_DIR}/${DSYM_SYMBOL_OUT_ZIP_NAME}\"\n        DSYM_SYMBOL_OUT_ZIP_NAME=${DSYM_SYMBOL_OUT_ZIP_NAME//&/_}\n            fi\n            \n            if [ ! -e \"${DSYM_ZIP_FPATH}\" ] ; then\n            exitWithMessage \"no symbol file zip archive generated: ${DSYM_ZIP_FPATH}\" 0\n            fi\n            \n            echo \"Step 4: Upload the symbols of dSYM.\"\n            echo \"--------------------------------\"\n            echo \"zip : ${DSYM_SYMBOL_OUT_ZIP_NAME}\"\n            echo \"dir : ${DSYM_ZIP_FPATH}\"\n            \n            echo \"dSYM upload domain: ${DSYM_UPLOAD_DOMAIN}\"\n            DSYM_UPLOAD_URL=\"http://${DSYM_UPLOAD_DOMAIN}/upload/dsym?app=${BUGLY_APP_ID}&pid=2&ver=${BUGLY_APP_VERSION}&n=${DSYM_SYMBOL_OUT_ZIP_NAME}&key=${BUGLY_APP_KEY}&bid=${BUNDLE_IDENTIFIER}\"\n            echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n            \n            # Upload dSYM to Bugly\n            echo \"curl --header \"Content-Type:application/zip\" --data-binary \"@${DSYM_ZIP_FPATH}\" \"${DSYM_UPLOAD_URL}\" --verbose\"\n            \n            echo \"--------------------------------\"\n            STATUS=$(/usr/bin/curl --header \"Content-Type:application/zip\" --data-binary \"@${DSYM_ZIP_FPATH}\" \"${DSYM_UPLOAD_URL}\" --verbose)\n            echo \"--------------------------------\"\n            \n            UPLOAD_RESULT=\"FAILTURE\"\n            echo \"Bugly server response: ${STATUS}\"\n            if [ ! \"${STATUS}\" ]; then\n            echo \"Error: Failed to upload the zip archive file.\"\n            elif [[ \"${STATUS}\" == *\":true\"* ]]; then\n            echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n            UPLOAD_RESULT=\"SUCCESS\"\n            else\n            echo \"Error: Failed to upload the zip archive file to Bugly.\"\n            fi\n            \n            #Remove temp dSYM archive\n            echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n            #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n            \n            if [ \"$?\" -ne 0 ]; then\n            exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n            fi\n            \n            echo \"--------------------------------\"\n            echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n            \n            if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n            echo \"--------------------------------\"\n            echo \"Failed to upload the dSYM\"\n            echo \"Please check the script and try it again.\"\n            fi\n            \n            echo \"----------------------------------------------------------------\"\n        }\n        \n        # .dSYM文件信息\n        \n        DSYM_FOLDER=\"${DWARF_DSYM_FOLDER_PATH}\"\n        IFS=$'\\n'\n        \n        echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n        RET=\"F\"\n        \n        for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n        RET=\"T\"\n        echo \"Found dSYM file: $dsymFile\"\n        uploadDSYM $dsymFile\n        done\n        \n        if [ $RET = \"F\" ]; then\n        exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n        fi\n";
 		};
 		67CD1C69210AD27F7B593738 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -880,6 +1056,59 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		325C2CBC1D08117F0008851E /* HelpshiftLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				325C2CBD1D08117F0008851E /* ar */,
+				325C2CBE1D08117F0008851E /* bg */,
+				325C2CBF1D08117F0008851E /* bn */,
+				325C2CC01D08117F0008851E /* ca */,
+				325C2CC11D08117F0008851E /* cs */,
+				325C2CC21D08117F0008851E /* da */,
+				325C2CC31D08117F0008851E /* de */,
+				325C2CC41D08117F0008851E /* el */,
+				325C2CC51D08117F0008851E /* en */,
+				325C2CC71D08117F0008851E /* es */,
+				325C2CC81D08117F0008851E /* fa */,
+				325C2CC91D08117F0008851E /* fi */,
+				325C2CCA1D08117F0008851E /* fr */,
+				325C2CCB1D08117F0008851E /* gu */,
+				325C2CCC1D08117F0008851E /* he */,
+				325C2CCD1D08117F0008851E /* hi */,
+				325C2CCE1D08117F0008851E /* hr */,
+				325C2CCF1D08117F0008851E /* hu */,
+				325C2CD01D08117F0008851E /* id */,
+				325C2CD11D08117F0008851E /* it */,
+				325C2CD21D08117F0008851E /* ja */,
+				325C2CD31D08117F0008851E /* kn */,
+				325C2CD41D08117F0008851E /* ko */,
+				325C2CD51D08117F0008851E /* lv */,
+				325C2CD61D08117F0008851E /* ml */,
+				325C2CD71D08117F0008851E /* mr */,
+				325C2CD81D08117F0008851E /* ms */,
+				325C2CD91D08117F0008851E /* nb-NO */,
+				325C2CDA1D08117F0008851E /* nb */,
+				325C2CDB1D08117F0008851E /* nl */,
+				325C2CDC1D08117F0008851E /* pa */,
+				325C2CDD1D08117F0008851E /* pl */,
+				325C2CDE1D08117F0008851E /* pt */,
+				325C2CDF1D08117F0008851E /* ro */,
+				325C2CE01D08117F0008851E /* ru */,
+				325C2CE11D08117F0008851E /* sk */,
+				325C2CE21D08117F0008851E /* sl */,
+				325C2CE31D08117F0008851E /* sv */,
+				325C2CE41D08117F0008851E /* ta */,
+				325C2CE51D08117F0008851E /* te */,
+				325C2CE61D08117F0008851E /* th */,
+				325C2CE71D08117F0008851E /* tr */,
+				325C2CE81D08117F0008851E /* uk */,
+				325C2CE91D08117F0008851E /* vi */,
+				325C2CEA1D08117F0008851E /* zh-Hans */,
+				325C2CEB1D08117F0008851E /* zh-Hant */,
+			);
+			name = HelpshiftLocalizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -966,8 +1195,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/81",
@@ -987,6 +1216,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/OneAPM/OneAPMUnitTests/libsAndHeaders/lib",
+					"$(PROJECT_DIR)/helpshift-sdk-ios-v5.6.1",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1004,8 +1234,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/81",
@@ -1024,6 +1254,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/OneAPM/OneAPMUnitTests/libsAndHeaders/lib",
+					"$(PROJECT_DIR)/helpshift-sdk-ios-v5.6.1",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sophia.netease.news;

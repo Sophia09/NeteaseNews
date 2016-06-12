@@ -9,13 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 //#import <tingyunApp/NBSAppAgent.h>
-//#import "OneAPM.h"
+#import <OneAPM/OneAPM.h>
 
 int main(int argc, char * argv[]) {
 
 //    [NBSAppAgent startWithAppID:@"7e9b41fb4ec04bbcaa72ccf06bf58ef7"];
     @autoreleasepool {
-//        [OneAPM startWithApplicationToken:@"64A48C981B376D640BF206575D7388BD76"];
+        [OneAPM printLog:NO];
+        [OneAPM disableZLib]; //禁止压缩
+        [OneAPM setCustomInfo:@"OneAPM Test"];
+        [OneAPM startWithApplicationToken:@"64A48C981B376D640BF206575D7388BD76"];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

@@ -76,6 +76,14 @@
     [[NSNotificationCenter defaultCenter]postNotification:[NSNotification notificationWithName:@"contentStart" object:nil]];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    // test block monitor in Bugly
+    for (int index = 0; index < 5; index++) {
+        [NSThread sleepForTimeInterval:1];
+    }    
+}
+
 
 #pragma mark - /************************* 刷新数据 ***************************/
 // ------下拉刷新
