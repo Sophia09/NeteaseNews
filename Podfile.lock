@@ -21,6 +21,9 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Bugly (2.2.3)
+  - Crashlytics (3.7.1):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - FDFullscreenPopGesture (1.1)
   - MJExtension (2.0.4)
   - MJRefresh (3.1.0)
@@ -41,6 +44,8 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
   - Bugly (= 2.2.3)
+  - Crashlytics
+  - Fabric
   - FDFullscreenPopGesture (= 1.1)
   - MJExtension (= 2.0.4)
   - MJRefresh (= 3.1.0)
@@ -53,6 +58,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Bugly: db578ea92b2a6b132cc19f79adf3bcd3b0fe6769
+  Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   MJExtension: 90503779f5c2608b76b5b0f41efdb05c080d1976
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
@@ -62,6 +69,6 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: f554dcbeedc8ce98af1c0db1c6e97868ef279ab5
+PODFILE CHECKSUM: 4c4a7eb1cb3d04feffac9141af14b5e1023e8d5a
 
 COCOAPODS: 1.0.0

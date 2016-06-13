@@ -12,6 +12,8 @@
 #import "HelpshiftCore.h"
 #import "CrabCrashReport.h"
 #import <NewRelicAgent/NewRelic.h>
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -47,8 +49,21 @@
     // register for NewRelic
     [NewRelicAgent startWithApplicationToken:@"AAb68871e1f8b2bacb64457699d3b83f08d46f729b"];
     
+    // register for Fabric
+    [Fabric with:@[[Crashlytics class]]];
+    [self logUser];
+    
     return YES;
 }
+
+- (void) logUser {
+    // TODO: Use the current user's information
+    // You can call any combination of these three methods
+    [CrashlyticsKit setUserIdentifier:@"007"];
+    [CrashlyticsKit setUserEmail:@"user@fabric.io"];
+    [CrashlyticsKit setUserName:@"Test User"];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
