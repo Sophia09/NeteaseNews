@@ -18,5 +18,6 @@ pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 #pod 'OneAPM'
 #pod 'tingyunApp', '~> 2.3.5'
 pod 'Bugly', '2.2.3'
+pod 'NewRelicAgent', '5.5.2'
 
 end

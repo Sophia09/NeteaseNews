@@ -11,6 +11,7 @@
 #import "HelpshiftAll.h"
 #import "HelpshiftCore.h"
 #import "CrabCrashReport.h"
+#import <NewRelicAgent/NewRelic.h>
 
 @interface AppDelegate ()
 
@@ -42,7 +43,9 @@
        [[CrabCrashReport sharedInstance] setCatchANREnable:YES];
     [[CrabCrashReport sharedInstance] setANRTimeoutInterval:500];
     [[CrabCrashReport sharedInstance] setAppUsername:@"I'm CrashCrashReport"];
-
+    
+    // register for NewRelic
+    [NewRelicAgent startWithApplicationToken:@"AAb68871e1f8b2bacb64457699d3b83f08d46f729b"];
     
     return YES;
 }

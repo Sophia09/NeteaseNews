@@ -24,6 +24,7 @@ PODS:
   - FDFullscreenPopGesture (1.1)
   - MJExtension (2.0.4)
   - MJRefresh (3.1.0)
+  - NewRelicAgent (5.5.2)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - FDFullscreenPopGesture (= 1.1)
   - MJExtension (= 2.0.4)
   - MJRefresh (= 3.1.0)
+  - NewRelicAgent (= 5.5.2)
   - ReactiveCocoa (= 2.5)
   - Reveal-iOS-SDK
   - SDWebImage (= 3.7.5)
@@ -54,11 +56,12 @@ SPEC CHECKSUMS:
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   MJExtension: 90503779f5c2608b76b5b0f41efdb05c080d1976
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  NewRelicAgent: 7393668f5d3410982be933fe7ad81f70da6c4b1e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: bb26aed24b86ceb89cb127c5e53d50c99353a122
+PODFILE CHECKSUM: f554dcbeedc8ce98af1c0db1c6e97868ef279ab5
 
 COCOAPODS: 1.0.0
