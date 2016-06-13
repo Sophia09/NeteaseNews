@@ -10,6 +10,7 @@
 #import <Bugly/Bugly.h>
 #import "HelpshiftAll.h"
 #import "HelpshiftCore.h"
+#import "CrabCrashReport.h"
 
 @interface AppDelegate ()
 
@@ -27,13 +28,21 @@
     // register Bugly account info
     BuglyConfig *config = [[BuglyConfig alloc] init];
     config.blockMonitorEnable = YES;
-    config.blockMonitorTimeout = 1;
+    config.blockMonitorTimeout = 0.5;
     config.reportLogLevel = 5;
     [Bugly startWithAppId:@"900033812" config:config];
     [Bugly setUserIdentifier:@"I'm a Test"];
     
     [HelpshiftCore initializeWithProvider:[HelpshiftAll sharedInstance]];
     [HelpshiftCore installForApiKey:@"151af306ee53417cbe9fd1df543196b1" domainName:@"test4bug" appID:@"test4bug_platform_20160608081748136-f2a80c77e500f14"];
+    
+    // register for Baidu Crab
+     [[CrabCrashReport sharedInstance] initCrashReporterWithAppKey:@"b3f6e72b7ccd84a3"
+                                                        AndVersion:@"1.0" AndChannel:@"AppStore"];
+       [[CrabCrashReport sharedInstance] setCatchANREnable:YES];
+    [[CrabCrashReport sharedInstance] setANRTimeoutInterval:1000];
+    [[CrabCrashReport sharedInstance] setAppUsername:@"I'm CrashCrashReport"];
+
     
     return YES;
 }

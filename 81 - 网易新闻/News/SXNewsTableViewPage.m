@@ -77,11 +77,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    
-    // test block monitor in Bugly
-    for (int index = 0; index < 5; index++) {
-        [NSThread sleepForTimeInterval:1];
-    }    
+      
 }
 
 
@@ -130,6 +126,13 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // test block monitor in Bugly
+//    if (indexPath.row % 2 == 0) {
+//        for (int index = 0; index < 5; index++) {
+//            [NSThread sleepForTimeInterval:1];
+//        }
+//    }
+    
     SXNewsEntity *newsModel = self.arrayList[indexPath.row];
     NSString *ID = [SXNewsCell idForRow:newsModel];
     if ((indexPath.row%20 == 0)&&(indexPath.row != 0)) {

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;/News/SXNewsTableViewPage.m"
-            timestampString = "487407957.822135"
+            timestampString = "487419081.777063"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>

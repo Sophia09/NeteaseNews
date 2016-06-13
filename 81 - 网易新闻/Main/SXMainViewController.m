@@ -126,6 +126,13 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    // test block monitor in Bugly    
+    for (int index = 0; index < 5; index++) {
+        [NSThread sleepForTimeInterval:1];
+    }
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     self.rightItem.hidden = YES;
