@@ -40,7 +40,7 @@
      [[CrabCrashReport sharedInstance] initCrashReporterWithAppKey:@"b3f6e72b7ccd84a3"
                                                         AndVersion:@"1.0" AndChannel:@"AppStore"];
        [[CrabCrashReport sharedInstance] setCatchANREnable:YES];
-    [[CrabCrashReport sharedInstance] setANRTimeoutInterval:1000];
+    [[CrabCrashReport sharedInstance] setANRTimeoutInterval:500];
     [[CrabCrashReport sharedInstance] setAppUsername:@"I'm CrashCrashReport"];
 
     

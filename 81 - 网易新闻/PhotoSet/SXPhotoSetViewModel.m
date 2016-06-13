@@ -50,6 +50,14 @@
     }else{
         self.replyCountBtnTitle = [NSString stringWithFormat:@"%.0f跟帖",count];
     }
+    
+    NSURLRequest *newsDetailRquest = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURLResponse * response = nil;
+    NSError * error = nil;
+    NSData * data = [NSURLConnection sendSynchronousRequest:newsDetailRquest
+                                          returningResponse:&response
+                                                      error:&error];
+
 
     [[SXHTTPManager manager]GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
         if (responseObject) {

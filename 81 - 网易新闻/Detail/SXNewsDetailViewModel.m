@@ -91,6 +91,15 @@
 - (void)requestForNewsDetailSuccess:(void (^)(NSDictionary *result))success
                          failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure{
     NSString *url = [NSString stringWithFormat:@"http://c.m.163.com/nc/article/%@/full.html",self.newsModel.docid];
+    
+    // Test block monitor
+    NSURLRequest *newsDetailRquest = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURLResponse * response = nil;
+    NSError * error = nil;
+    NSData * data = [NSURLConnection sendSynchronousRequest:newsDetailRquest
+                                          returningResponse:&response
+                                                      error:&error];
+    
     [[SXHTTPManager manager]GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (responseObject) {
             success(responseObject);
