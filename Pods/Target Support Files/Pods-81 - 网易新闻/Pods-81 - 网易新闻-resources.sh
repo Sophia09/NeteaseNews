@@ -79,6 +79,12 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "CloudwiseMAgent/ios_v1.3.6/CloudwiseMAgent.bundle"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "CloudwiseMAgent/ios_v1.3.6/CloudwiseMAgent.bundle"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

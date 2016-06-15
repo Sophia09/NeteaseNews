@@ -21,5 +21,6 @@ pod 'Bugly', '2.2.3'
 pod 'NewRelicAgent', '5.5.2'
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'CloudwiseMAgent', '1.3.6'
 
 end

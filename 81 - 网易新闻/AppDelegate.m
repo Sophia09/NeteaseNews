@@ -14,6 +14,7 @@
 #import <NewRelicAgent/NewRelic.h>
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+#import <CloudwiseMAgent/SmartAgent.h>
 
 @interface AppDelegate ()
 
@@ -28,6 +29,12 @@
     UIApplication *app = [UIApplication sharedApplication];
     app.statusBarStyle = UIStatusBarStyleLightContent;
     
+    [self registerSDKs];
+    
+    return YES;
+}
+
+- (void)registerSDKs {
     // register Bugly account info
     BuglyConfig *config = [[BuglyConfig alloc] init];
     config.blockMonitorEnable = YES;
@@ -36,24 +43,28 @@
     [Bugly startWithAppId:@"900033812" config:config];
     [Bugly setUserIdentifier:@"I'm a Test"];
     
+    // register for HelpShift
     [HelpshiftCore initializeWithProvider:[HelpshiftAll sharedInstance]];
     [HelpshiftCore installForApiKey:@"151af306ee53417cbe9fd1df543196b1" domainName:@"test4bug" appID:@"test4bug_platform_20160608081748136-f2a80c77e500f14"];
     
     // register for Baidu Crab
-     [[CrabCrashReport sharedInstance] initCrashReporterWithAppKey:@"b3f6e72b7ccd84a3"
-                                                        AndVersion:@"1.0" AndChannel:@"AppStore"];
-       [[CrabCrashReport sharedInstance] setCatchANREnable:YES];
+    [[CrabCrashReport sharedInstance] initCrashReporterWithAppKey:@"b3f6e72b7ccd84a3"
+                                                       AndVersion:@"1.0" AndChannel:@"AppStore"];
+    [[CrabCrashReport sharedInstance] setCatchANREnable:YES];
     [[CrabCrashReport sharedInstance] setANRTimeoutInterval:500];
     [[CrabCrashReport sharedInstance] setAppUsername:@"I'm CrashCrashReport"];
     
     // register for NewRelic
-    [NewRelicAgent startWithApplicationToken:@"AAb68871e1f8b2bacb64457699d3b83f08d46f729b"];
+//    [NewRelicAgent startWithApplicationToken:@"AAb68871e1f8b2bacb64457699d3b83f08d46f729b"];
     
     // register for Fabric
     [Fabric with:@[[Crashlytics class]]];
     [self logUser];
     
-    return YES;
+    // register for toushibao
+    [[SmartAgent sharedInstance] startOnCloudWithAppKey:@"wS0n2SF8WRA6pp871oldJ3TgrsbEbpT1P7KK1EgukF7DJ85bJ3h/JVrsjPGFWH8I2JJ3**Ewe5gk!!"];
+    [[SmartAgent sharedInstance] setBlockTimeout:3.5];
+//    [[SmartAgent sharedInstance] loggingDataTransmissionResult];
 }
 
 - (void) logUser {
