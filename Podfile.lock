@@ -21,7 +21,6 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Bugly (2.2.3)
-  - CloudwiseMAgent (1.3.6)
   - Crashlytics (3.7.1):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
@@ -45,7 +44,6 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
   - Bugly (= 2.2.3)
-  - CloudwiseMAgent (= 1.3.6)
   - Crashlytics
   - Fabric
   - FDFullscreenPopGesture (= 1.1)
@@ -60,7 +58,6 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Bugly: db578ea92b2a6b132cc19f79adf3bcd3b0fe6769
-  CloudwiseMAgent: b197eebd9ba9dec59ff9ada1ef0e277250423617
   Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
@@ -72,6 +69,6 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 5efdac70ad9950b720f0e826c1a6bf25997287f0
+PODFILE CHECKSUM: 3b2a2b5861cd9a310718c93eeb717e6ac46d8c94
 
 COCOAPODS: 1.0.0

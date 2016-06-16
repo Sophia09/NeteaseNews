@@ -86,6 +86,8 @@
 		325C2CFD1D08117F0008851E /* Release-5.6.1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CF31D08117F0008851E /* Release-5.6.1.txt */; };
 		325C2CFE1D08117F0008851E /* OneAPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CF41D08117F0008851E /* OneAPM.framework */; };
 		325C2D001D0811C00008851E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CFF1D0811C00008851E /* libsqlite3.tbd */; };
+		32635BEF1D127CF9008D8C78 /* CloudwiseMAgent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32635BED1D127CF9008D8C78 /* CloudwiseMAgent.bundle */; };
+		32635BF01D127CF9008D8C78 /* CloudwiseMAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32635BEE1D127CF9008D8C78 /* CloudwiseMAgent.framework */; };
 		985E301D6D5C50839099468D /* Pods_81_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB98346364F0057685A34CD /* Pods_81_______.framework */; };
 /* End PBXBuildFile section */
 
@@ -282,6 +284,8 @@
 		325C2CF31D08117F0008851E /* Release-5.6.1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Release-5.6.1.txt"; sourceTree = "<group>"; };
 		325C2CF41D08117F0008851E /* OneAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneAPM.framework; sourceTree = "<group>"; };
 		325C2CFF1D0811C00008851E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		32635BED1D127CF9008D8C78 /* CloudwiseMAgent.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CloudwiseMAgent.bundle; sourceTree = "<group>"; };
+		32635BEE1D127CF9008D8C78 /* CloudwiseMAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudwiseMAgent.framework; sourceTree = "<group>"; };
 		5BBABE94DDC8CA87447CC869 /* Pods-81 - 网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.release.xcconfig"; sourceTree = "<group>"; };
 		5DB98346364F0057685A34CD /* Pods_81_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_81_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F12DD2AB3E5C00830E44487 /* Pods-81 - 网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
@@ -302,6 +306,7 @@
 				320210161D0D733B008E6EBC /* libCrabCrashReport.a in Frameworks */,
 				1DA8BAB61C522E2800D041C5 /* CoreTelephony.framework in Frameworks */,
 				1DA8BAB41C522E1F00D041C5 /* SystemConfiguration.framework in Frameworks */,
+				32635BF01D127CF9008D8C78 /* CloudwiseMAgent.framework in Frameworks */,
 				985E301D6D5C50839099468D /* Pods_81_______.framework in Frameworks */,
 				325C2CFC1D08117F0008851E /* libHelpshift.a in Frameworks */,
 			);
@@ -555,6 +560,7 @@
 		1D2A58FC1A700822001F9B8E = {
 			isa = PBXGroup;
 			children = (
+				32635BEC1D127CE7008D8C78 /* Cloudwise */,
 				320210111D0D733B008E6EBC /* CrabCrashReportSDK */,
 				325C2CB41D08117F0008851E /* helpshift-sdk-ios-v5.6.1 */,
 				325C2CF41D08117F0008851E /* OneAPM.framework */,
@@ -747,6 +753,15 @@
 			path = HSThemes;
 			sourceTree = "<group>";
 		};
+		32635BEC1D127CE7008D8C78 /* Cloudwise */ = {
+			isa = PBXGroup;
+			children = (
+				32635BED1D127CF9008D8C78 /* CloudwiseMAgent.bundle */,
+				32635BEE1D127CF9008D8C78 /* CloudwiseMAgent.framework */,
+			);
+			name = Cloudwise;
+			sourceTree = "<group>";
+		};
 		828A693D6CC672AA3871A1D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -912,6 +927,7 @@
 				1D2357761A80A4B2000C7AAC /* Main.storyboard in Resources */,
 				1D1C4A481B77259C00CE3E01 /* SXWeatherItemView.xib in Resources */,
 				325C2CFD1D08117F0008851E /* Release-5.6.1.txt in Resources */,
+				32635BEF1D127CF9008D8C78 /* CloudwiseMAgent.bundle in Resources */,
 				325C2CF91D08117F0008851E /* HsUIResourceBundle.bundle in Resources */,
 				1D25EA521C8D69EE009AFE2E /* SXDetails.css in Resources */,
 				1D58EECA1A709AE600411E39 /* News.storyboard in Resources */,

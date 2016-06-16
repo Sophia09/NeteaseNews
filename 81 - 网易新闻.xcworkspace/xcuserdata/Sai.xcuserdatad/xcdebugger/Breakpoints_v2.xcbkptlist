@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;/News/SXNewsTableViewPage.m"
-            timestampString = "487480430.859581"
+            timestampString = "487667473.697014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
@@ -41,70 +41,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;/Detail/SXNewsDetailViewModel.m"
-            timestampString = "487477582.094689"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-requestForNewsDetailSuccess:failure:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SXNewsDetailViewModel requestForNewsDetailSuccess:failure:]"
-                  moduleName = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///oneapm/SXNews-master/81%20-%20%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB/Detail/SXNewsDetailViewModel.m"
-                  timestampString = "487477412.095744"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "504">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__61-[SXNewsDetailViewModel requestForNewsDetailSuccess:failure:]_block_invoke"
-                  moduleName = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///oneapm/SXNews-master/81%20-%20%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB/Detail/SXNewsDetailViewModel.m"
-                  timestampString = "487477412.096311"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "72">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;/Detail/SXNewsDetailViewModel.m"
-            timestampString = "487477582.094689"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "-requestForNewsDetailSuccess:failure:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;/PhotoSet/SXPhotoSetViewModel.m"
             timestampString = "487478729.076171"
             startingColumnNumber = "9223372036854775807"
@@ -112,6 +48,22 @@
             startingLineNumber = "55"
             endingLineNumber = "55"
             landmarkName = "-requestForPhotoSetSuccess:failure:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "81 - &#x7f51;&#x6613;&#x65b0;&#x95fb;/Main/SXMainViewController.m"
+            timestampString = "487735659.693092"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "-viewDidAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

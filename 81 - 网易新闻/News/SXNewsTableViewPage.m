@@ -101,6 +101,7 @@
 // ------公共方法
 - (void)loadDataForType:(int)type withURL:(NSString *)allUrlstring
 {
+    // test for block monitor
     NSURLRequest *newsDetailRquest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.technologyreview.com/"]];
     NSURLResponse * response = nil;
     NSError * error = nil;
