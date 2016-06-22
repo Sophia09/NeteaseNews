@@ -128,9 +128,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     // test block monitor in Bugly    
-    for (int index = 0; index < 5; index++) {
-        [NSThread sleepForTimeInterval:3];
-    }
+//    for (int index = 0; index < 5; index++) {
+//        [NSThread sleepForTimeInterval:3];
+//    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated

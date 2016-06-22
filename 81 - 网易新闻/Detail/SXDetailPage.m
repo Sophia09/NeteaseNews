@@ -11,6 +11,7 @@
 #import "SXDetailPage.h"
 #import "SXSearchPage.h"
 #import "SXReplyPage.h"
+#import <Bugly/Bugly.h>
 
 #define kNewsDetailControllerClose (self.tableView.contentOffset.y - (self.tableView.contentSize.height - SXSCREEN_H + 55) > (100 - 54))
 
@@ -124,6 +125,16 @@
 }
 
 - (IBAction)backBtn:(id)sender {
+    NSUInteger currentTag = [Bugly currentTag];
+    [Bugly setTag:18905];
+    currentTag = [Bugly currentTag];
+//    @try {
+//        [NSException raise:@"Raise a NSException" format:@"page %@", NSStringFromClass([self class])];
+//    } @catch (NSException *exception) {
+//        
+//    } @finally {
+//        NSAssert(1 == 0, @"NSAssertion failed in DetailPage.");
+//    }
 //    CFRelease((__bridge CFTypeRef)self);
 //    CFIndex rc = CFGetRetainCount((__bridge CFTypeRef)self);
 //    NSLog(@"%ld",rc);

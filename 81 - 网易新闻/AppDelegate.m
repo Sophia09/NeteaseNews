@@ -35,12 +35,14 @@
 }
 
 - (void)registerSDKs {
- /*
+ 
     // register Bugly account info
     BuglyConfig *config = [[BuglyConfig alloc] init];
     config.blockMonitorEnable = YES;
     config.blockMonitorTimeout = 0.5;
     config.reportLogLevel = 5;
+    [Bugly setTag:501];
+    [Bugly setTag:18756];
     [Bugly startWithAppId:@"900033812" config:config];
     [Bugly setUserIdentifier:@"I'm a Test"];
     
@@ -61,7 +63,7 @@
     // register for Fabric
     [Fabric with:@[[Crashlytics class]]];
     [self logUser];
-   */
+   
     // register for toushibao
     [[SmartAgent sharedInstance] startOnCloudWithAppKey:@"wS0n2SF8WRA6pp871oldJ3TgrsbEbpT1P7KK1EgukF7DJ85bJ3h/JVrsjPGFWH8I2JJ3**Ewe5gk!!" monitoringOptions:CWSAMonitoringBlock];
         [[SmartAgent sharedInstance] setBlockTimeout:3.0];

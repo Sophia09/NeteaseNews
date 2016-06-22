@@ -9,6 +9,7 @@
 #import "SXPhotoSetViewModel.h"
 #import "SXPhotoSetPage.h"
 #import "SXReplyPage.h"
+#import <Bugly/Bugly.h>
 
 @interface SXPhotoSetPage ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *photoScrollView;
@@ -88,6 +89,18 @@
 }
 
 - (IBAction)backBtnClick:(id)sender {
+    NSUInteger currentTag = [Bugly currentTag];
+    [Bugly setTag:18906];
+    currentTag = [Bugly currentTag];
+    
+//    @try {
+//        [NSException raise:@"Raise a NSException" format:@"page %@", NSStringFromClass([self class])];
+//    } @catch (NSException *exception) {
+//        
+//    } @finally {
+//      NSAssert(1 == 0, @"NSAssertion failed.");
+//    }    
+    
 //    CFRelease((__bridge CFTypeRef)self);
 //    CFIndex rc = CFGetRetainCount((__bridge CFTypeRef)self);
 //    NSLog(@"%ld",rc);

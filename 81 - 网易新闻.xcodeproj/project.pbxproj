@@ -84,7 +84,6 @@
 		325C2CF91D08117F0008851E /* HsUIResourceBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CEF1D08117F0008851E /* HsUIResourceBundle.bundle */; };
 		325C2CFC1D08117F0008851E /* libHelpshift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CF21D08117F0008851E /* libHelpshift.a */; };
 		325C2CFD1D08117F0008851E /* Release-5.6.1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CF31D08117F0008851E /* Release-5.6.1.txt */; };
-		325C2CFE1D08117F0008851E /* OneAPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CF41D08117F0008851E /* OneAPM.framework */; };
 		325C2D001D0811C00008851E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CFF1D0811C00008851E /* libsqlite3.tbd */; };
 		32635BEF1D127CF9008D8C78 /* CloudwiseMAgent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32635BED1D127CF9008D8C78 /* CloudwiseMAgent.bundle */; };
 		32635BF01D127CF9008D8C78 /* CloudwiseMAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32635BEE1D127CF9008D8C78 /* CloudwiseMAgent.framework */; };
@@ -282,7 +281,6 @@
 		325C2CEF1D08117F0008851E /* HsUIResourceBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HsUIResourceBundle.bundle; sourceTree = "<group>"; };
 		325C2CF21D08117F0008851E /* libHelpshift.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHelpshift.a; sourceTree = "<group>"; };
 		325C2CF31D08117F0008851E /* Release-5.6.1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Release-5.6.1.txt"; sourceTree = "<group>"; };
-		325C2CF41D08117F0008851E /* OneAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneAPM.framework; sourceTree = "<group>"; };
 		325C2CFF1D0811C00008851E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		32635BED1D127CF9008D8C78 /* CloudwiseMAgent.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CloudwiseMAgent.bundle; sourceTree = "<group>"; };
 		32635BEE1D127CF9008D8C78 /* CloudwiseMAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudwiseMAgent.framework; sourceTree = "<group>"; };
@@ -300,7 +298,6 @@
 				32337B811D07FB74005AFF87 /* Security.framework in Frameworks */,
 				1DA8BABC1C522E5F00D041C5 /* libstdc++.tbd in Frameworks */,
 				1DA8BABA1C522E5600D041C5 /* libz.tbd in Frameworks */,
-				325C2CFE1D08117F0008851E /* OneAPM.framework in Frameworks */,
 				1DA8BAB81C522E3200D041C5 /* CoreData.framework in Frameworks */,
 				320210151D0D733B008E6EBC /* CrashReporter.framework in Frameworks */,
 				320210161D0D733B008E6EBC /* libCrabCrashReport.a in Frameworks */,
@@ -563,7 +560,6 @@
 				32635BEC1D127CE7008D8C78 /* Cloudwise */,
 				320210111D0D733B008E6EBC /* CrabCrashReportSDK */,
 				325C2CB41D08117F0008851E /* helpshift-sdk-ios-v5.6.1 */,
-				325C2CF41D08117F0008851E /* OneAPM.framework */,
 				322C1E4A1CF306D20059F345 /* libReveal.dylib */,
 				1DA8BABB1C522E5F00D041C5 /* libstdc++.tbd */,
 				1DA8BAB91C522E5600D041C5 /* libz.tbd */,
