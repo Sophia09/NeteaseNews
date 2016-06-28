@@ -102,12 +102,12 @@
 - (void)loadDataForType:(int)type withURL:(NSString *)allUrlstring
 {
     // test for block monitor
-    NSURLRequest *newsDetailRquest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.technologyreview.com/"]];
-    NSURLResponse * response = nil;
-    NSError * error = nil;
-    NSData * data = [NSURLConnection sendSynchronousRequest:newsDetailRquest
-                                          returningResponse:&response
-                                                      error:&error];
+//    NSURLRequest *newsDetailRquest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.technologyreview.com/"]];
+//    NSURLResponse * response = nil;
+//    NSError * error = nil;
+//    NSData * data = [NSURLConnection sendSynchronousRequest:newsDetailRquest
+//                                          returningResponse:&response
+//                                                      error:&error];
     
     @weakify(self)
     [[self.viewModel.fetchNewsEntityCommand execute:allUrlstring]subscribeNext:^(NSArray *arrayM) {
