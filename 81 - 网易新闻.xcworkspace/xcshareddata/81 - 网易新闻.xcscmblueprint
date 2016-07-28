@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "14322E5B258C037225D35EAC18F4FC5979AC4EBB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "14322E5B258C037225D35EAC18F4FC5979AC4EBB" : 0,
+    "4BE57E12D4BCE66E8DC913677F60FB2229D7E8DF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40E09017-A6B2-4B1E-8293-EC6AD0705E77",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "14322E5B258C037225D35EAC18F4FC5979AC4EBB" : "SXNews-master\/",
+    "4BE57E12D4BCE66E8DC913677F60FB2229D7E8DF" : "oneapm-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "81 - 网易新闻",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "81 - 网易新闻.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Sophia09\/NeteaseNews.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14322E5B258C037225D35EAC18F4FC5979AC4EBB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oneapm.me:6spring\/oneapm-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4BE57E12D4BCE66E8DC913677F60FB2229D7E8DF"
+    }
+  ]
+}

@@ -59,5 +59,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+    <key>DTXRuxitAgentEnvironment</key>
+    <string>czs22325</string>
+    <key>DTXApplicationID</key>
+    <string>7530e102-469c-41b8-a605-6558bf34c4cf</string>
 </dict>
 </plist>

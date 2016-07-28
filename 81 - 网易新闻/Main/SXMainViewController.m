@@ -13,8 +13,13 @@
 #import "SXTitleLable.h"
 #import "SXWeatherEntity.h"
 #import "SXWeatherViewModel.h"
+#import <Dynatrace/Dynatrace.h>
 
 @interface SXMainViewController ()<UIScrollViewDelegate>
+
+{
+    DTXAction *enterAction;
+}
 
 /** 标题栏 */
 @property (weak, nonatomic) IBOutlet UIScrollView *smallScrollView;
@@ -107,6 +112,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    enterAction = [DTXAction enterActionWithName:NSStringFromClass([self class])];
     self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     if([[NSUserDefaults standardUserDefaults]boolForKey:@"top20"]){
         self.TopToTop.constant = 20;
@@ -131,6 +137,7 @@
 //    for (int index = 0; index < 5; index++) {
 //        [NSThread sleepForTimeInterval:3];
 //    }
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -138,6 +145,11 @@
     self.rightItem.hidden = YES;
     self.rightItem.transform = CGAffineTransformIdentity;
     [self.rightItem setImage:[UIImage imageNamed:@"top_navigation_square"] forState:UIControlStateNormal];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [enterAction leaveAction];
 }
 
 - (void)showRightItem
@@ -362,6 +374,12 @@
         self.weatherView.hidden = YES;
         self.tran.hidden = YES;
     }];
+}
+
+#pragma mark - New Relic
+
+- (NSString*) customNewRelicInteractionName {
+    return @"SXMainViewController ViewLoading";
 }
 
 @end

@@ -15,6 +15,8 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <CloudwiseMAgent/SmartAgent.h>
+#import <UMMobClick/MobClick.h>
+#import <ADEUMInstrumentation/ADEUMInstrumentation.h>
 
 @interface AppDelegate ()
 
@@ -35,7 +37,7 @@
 }
 
 - (void)registerSDKs {
- 
+/*
     // register Bugly account info
     BuglyConfig *config = [[BuglyConfig alloc] init];
     config.blockMonitorEnable = YES;
@@ -56,19 +58,51 @@
     [[CrabCrashReport sharedInstance] setCatchANREnable:YES];
     [[CrabCrashReport sharedInstance] setANRTimeoutInterval:500];
     [[CrabCrashReport sharedInstance] setAppUsername:@"I'm CrashCrashReport"];
-    
+ */
     // register for NewRelic
-//    [NewRelicAgent startWithApplicationToken:@"AAb68871e1f8b2bacb64457699d3b83f08d46f729b"];
+//    [NewRelicAgent startWithApplicationToken:@"AA32458c42bf70d77121fc4d9d8b7ba835348b07fa"];
     
+    // register for AppDynamics
+    // https://docs.appdynamics.com/display/PRO42/Use+the+APIs+of+the+iOS+SDK+to+Customize+Your+Instrumentation
+//    [ADEumInstrumentation initWithKey:@"AD-AAB-AAC-HWY"];
+    ADEumAgentConfiguration *adConfig = [[ADEumAgentConfiguration alloc] init];
+    adConfig.appKey = @"AD-AAB-AAC-HWY";
+    adConfig.enableLogging = YES;
+    [ADEumInstrumentation initWithConfiguration:adConfig];
+ 
+/*
     // register for Fabric
     [Fabric with:@[[Crashlytics class]]];
     [self logUser];
-   
+    
+    // register for dynatrace
+    
+
     // register for toushibao
     [[SmartAgent sharedInstance] startOnCloudWithAppKey:@"wS0n2SF8WRA6pp871oldJ3TgrsbEbpT1P7KK1EgukF7DJ85bJ3h/JVrsjPGFWH8I2JJ3**Ewe5gk!!" monitoringOptions:CWSAMonitoringBlock];
         [[SmartAgent sharedInstance] setBlockTimeout:3.0];
     [[SmartAgent sharedInstance] loggingDataTransmissionResult];
+ 
     
+    
+     // fetch uid from umeng server
+//    Class cls = NSClassFromString(@"UMANUtil");
+//    SEL deviceIDSelector = @selector(openUDIDString);
+//    NSString *deviceID = nil;
+//    if(cls && [cls respondsToSelector:deviceIDSelector]){
+//        deviceID = [cls performSelector:deviceIDSelector];
+//    }
+//    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:@{@"oid" : deviceID}
+//                                                       options:NSJSONWritingPrettyPrinted
+//                                                         error:nil];
+//    
+//    NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
+    
+    // register for umeng
+//    UMConfigInstance.appKey = @"578e037fe0f55ad17b0036a3";
+//    [MobClick startWithConfigure:UMConfigInstance];
+ */
+  
 }
 
 - (void) logUser {

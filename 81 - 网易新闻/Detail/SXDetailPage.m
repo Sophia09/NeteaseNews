@@ -12,10 +12,13 @@
 #import "SXSearchPage.h"
 #import "SXReplyPage.h"
 #import <Bugly/Bugly.h>
+#import <Dynatrace/Dynatrace.h>
 
 #define kNewsDetailControllerClose (self.tableView.contentOffset.y - (self.tableView.contentSize.height - SXSCREEN_H + 55) > (100 - 54))
 
-@interface SXDetailPage ()<UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface SXDetailPage ()<UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate> {
+    DTXAction *enterAction;
+}
 @property (strong, nonatomic) UIWebView *webView;
 
 @property (weak, nonatomic) IBOutlet UIButton *replyCountBtn;
@@ -102,6 +105,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    enterAction = [DTXAction enterActionWithName:NSStringFromClass([self class])];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     self.tabBarController.tabBar.hidden = YES;
 }
@@ -109,6 +113,11 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.webView stopLoading];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [enterAction leaveAction];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -492,5 +501,10 @@
     }];
 }
 
+#pragma mark - New Relic
+
+- (NSString*) customNewRelicInteractionName {
+    return @"SXDetailPage ViewLoading";
+}
 
 @end

@@ -55,7 +55,7 @@
         <!--Item-->
         <scene sceneID="cea-Qr-jAq">
             <objects>
-                <viewController id="QUT-lh-x6l" sceneMemberID="viewController">
+                <viewController id="QUT-lh-x6l" customClass="ReadTabViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fof-Bz-iVQ"/>
                         <viewControllerLayoutGuide type="bottom" id="HfW-eo-Tjh"/>
@@ -354,7 +354,7 @@
         <!--Item-->
         <scene sceneID="p2q-Or-egg">
             <objects>
-                <viewController id="TY2-ry-KrA" sceneMemberID="viewController">
+                <viewController id="TY2-ry-KrA" customClass="FindTabViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sek-wm-ON6"/>
                         <viewControllerLayoutGuide type="bottom" id="bGL-zJ-HuX"/>

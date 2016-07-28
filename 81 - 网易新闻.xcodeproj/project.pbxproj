@@ -72,9 +72,10 @@
 		1DE822B91C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822B71C5B5C4A00E965C1 /* SXNewsDetailBottomCell.m */; };
 		1DE822BA1C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE822B81C5B5C4A00E965C1 /* SXNewsDetailBottomCell.xib */; };
 		1DE822C01C60577900E965C1 /* SXSimilarNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE822BF1C60577900E965C1 /* SXSimilarNewsEntity.m */; };
-		320210151D0D733B008E6EBC /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320210131D0D733B008E6EBC /* CrashReporter.framework */; };
 		320210161D0D733B008E6EBC /* libCrabCrashReport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320210141D0D733B008E6EBC /* libCrabCrashReport.a */; };
 		320C66841CEF19340042B95B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 320C66831CEF19340042B95B /* Podfile */; };
+		322010411D34DD9200925072 /* ReadTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322010401D34DD9200925072 /* ReadTabViewController.m */; };
+		322010441D34DE1000925072 /* FindTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322010431D34DE1000925072 /* FindTabViewController.m */; };
 		322C1E4C1CF308940059F345 /* libReveal.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 322C1E4A1CF306D20059F345 /* libReveal.dylib */; };
 		32337B811D07FB74005AFF87 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32337B801D07FB74005AFF87 /* Security.framework */; };
 		325C2CF51D08117F0008851E /* HelpshiftLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CBC1D08117F0008851E /* HelpshiftLocalizable.strings */; };
@@ -86,7 +87,7 @@
 		325C2CFD1D08117F0008851E /* Release-5.6.1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 325C2CF31D08117F0008851E /* Release-5.6.1.txt */; };
 		325C2D001D0811C00008851E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 325C2CFF1D0811C00008851E /* libsqlite3.tbd */; };
 		32635BEF1D127CF9008D8C78 /* CloudwiseMAgent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32635BED1D127CF9008D8C78 /* CloudwiseMAgent.bundle */; };
-		32635BF01D127CF9008D8C78 /* CloudwiseMAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32635BEE1D127CF9008D8C78 /* CloudwiseMAgent.framework */; };
+		3268F1441D3E3BB3006E50CB /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3268F1431D3E3BB3006E50CB /* UMMobClick.framework */; };
 		985E301D6D5C50839099468D /* Pods_81_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB98346364F0057685A34CD /* Pods_81_______.framework */; };
 /* End PBXBuildFile section */
 
@@ -221,6 +222,10 @@
 		320210131D0D733B008E6EBC /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
 		320210141D0D733B008E6EBC /* libCrabCrashReport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrabCrashReport.a; sourceTree = "<group>"; };
 		320C66831CEF19340042B95B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3220103F1D34DD9200925072 /* ReadTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadTabViewController.h; sourceTree = "<group>"; };
+		322010401D34DD9200925072 /* ReadTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTabViewController.m; sourceTree = "<group>"; };
+		322010421D34DE1000925072 /* FindTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindTabViewController.h; sourceTree = "<group>"; };
+		322010431D34DE1000925072 /* FindTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTabViewController.m; sourceTree = "<group>"; };
 		322C1E4A1CF306D20059F345 /* libReveal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libReveal.dylib; sourceTree = "<group>"; };
 		32337B801D07FB74005AFF87 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		325C2CB51D08117F0008851E /* Helpshift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpshift.h; sourceTree = "<group>"; };
@@ -284,6 +289,8 @@
 		325C2CFF1D0811C00008851E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		32635BED1D127CF9008D8C78 /* CloudwiseMAgent.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CloudwiseMAgent.bundle; sourceTree = "<group>"; };
 		32635BEE1D127CF9008D8C78 /* CloudwiseMAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudwiseMAgent.framework; sourceTree = "<group>"; };
+		3268F1431D3E3BB3006E50CB /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		32FD2D561D26476800B0322C /* OneAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneAPM.framework; sourceTree = "<group>"; };
 		5BBABE94DDC8CA87447CC869 /* Pods-81 - 网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.release.xcconfig"; sourceTree = "<group>"; };
 		5DB98346364F0057685A34CD /* Pods_81_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_81_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F12DD2AB3E5C00830E44487 /* Pods-81 - 网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-81 - 网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-81 - 网易新闻/Pods-81 - 网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
@@ -299,11 +306,10 @@
 				1DA8BABC1C522E5F00D041C5 /* libstdc++.tbd in Frameworks */,
 				1DA8BABA1C522E5600D041C5 /* libz.tbd in Frameworks */,
 				1DA8BAB81C522E3200D041C5 /* CoreData.framework in Frameworks */,
-				320210151D0D733B008E6EBC /* CrashReporter.framework in Frameworks */,
 				320210161D0D733B008E6EBC /* libCrabCrashReport.a in Frameworks */,
 				1DA8BAB61C522E2800D041C5 /* CoreTelephony.framework in Frameworks */,
+				3268F1441D3E3BB3006E50CB /* UMMobClick.framework in Frameworks */,
 				1DA8BAB41C522E1F00D041C5 /* SystemConfiguration.framework in Frameworks */,
-				32635BF01D127CF9008D8C78 /* CloudwiseMAgent.framework in Frameworks */,
 				985E301D6D5C50839099468D /* Pods_81_______.framework in Frameworks */,
 				325C2CFC1D08117F0008851E /* libHelpshift.a in Frameworks */,
 			);
@@ -557,6 +563,7 @@
 		1D2A58FC1A700822001F9B8E = {
 			isa = PBXGroup;
 			children = (
+				3268F1421D3E3BA4006E50CB /* UM */,
 				32635BEC1D127CE7008D8C78 /* Cloudwise */,
 				320210111D0D733B008E6EBC /* CrabCrashReportSDK */,
 				325C2CB41D08117F0008851E /* helpshift-sdk-ios-v5.6.1 */,
@@ -597,6 +604,10 @@
 				1D25EA4B1C8D69EE009AFE2E /* Other */,
 				1D2A590C1A700822001F9B8E /* AppDelegate.h */,
 				1D2A590D1A700822001F9B8E /* AppDelegate.m */,
+				3220103F1D34DD9200925072 /* ReadTabViewController.h */,
+				322010401D34DD9200925072 /* ReadTabViewController.m */,
+				322010421D34DE1000925072 /* FindTabViewController.h */,
+				322010431D34DE1000925072 /* FindTabViewController.m */,
 				1DA8BABD1C522EEE00D041C5 /* NetEasyPrefix.pch */,
 				1D2A59081A700822001F9B8E /* Supporting Files */,
 			);
@@ -758,9 +769,18 @@
 			name = Cloudwise;
 			sourceTree = "<group>";
 		};
+		3268F1421D3E3BA4006E50CB /* UM */ = {
+			isa = PBXGroup;
+			children = (
+				3268F1431D3E3BB3006E50CB /* UMMobClick.framework */,
+			);
+			name = UM;
+			sourceTree = "<group>";
+		};
 		828A693D6CC672AA3871A1D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32FD2D561D26476800B0322C /* OneAPM.framework */,
 				325C2CFF1D0811C00008851E /* libsqlite3.tbd */,
 				32337B801D07FB74005AFF87 /* Security.framework */,
 				5DB98346364F0057685A34CD /* Pods_81_______.framework */,
@@ -793,6 +813,7 @@
 				0AE1419AD43D49817B9BB779 /* 📦 Copy Pods Resources */,
 				320210101D0D0980008E6EBC /* ShellScript */,
 				320210171D0E9832008E6EBC /* ShellScript */,
+				328E04B11D45F1C300069C27 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -986,6 +1007,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 64c7352a239fa5fbbe4086d56bad4d3ae5d73aaf dc10d7d5df94621bf573628ac666d76da11ef4dbdb20d4fb01f0af89655fce92";
 		};
+		328E04B11D45F1C300069C27 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT=`/usr/bin/find \"${SRCROOT}\" -name newrelic_postbuild.sh | head -n 1`\n\n/bin/sh \"${SCRIPT}\" \"AA32458c42bf70d77121fc4d9d8b7ba835348b07fa\"";
+		};
 		67CD1C69210AD27F7B593738 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1032,6 +1066,7 @@
 				1D882E3C1A81151C004C9C9A /* SXPhotosDetailEntity.m in Sources */,
 				1D25EA6F1C8E7E33009AFE2E /* SXWeatherViewModel.m in Sources */,
 				1D58EED01A70A42100411E39 /* SXNewsTableViewPage.m in Sources */,
+				322010441D34DE1000925072 /* FindTabViewController.m in Sources */,
 				1DE822AB1C5875CC00E965C1 /* SXSearchListCell.m in Sources */,
 				1D0AC8291A73B6EF00EEF963 /* SXNewsDetailEntity.m in Sources */,
 				1D7DFD261CA0F3280084EC5B /* SXReplyHeader.m in Sources */,
@@ -1040,6 +1075,7 @@
 				1D007F5A1B6D151D00EA119C /* SXWeatherEntity.m in Sources */,
 				1D25EA4A1C8D69E4009AFE2E /* UIView+Frame.m in Sources */,
 				1D0AC8321A73C66200EEF963 /* SXDetailPage.m in Sources */,
+				322010411D34DD9200925072 /* ReadTabViewController.m in Sources */,
 				1D1C4A461B77257300CE3E01 /* SXWeatherItemView.m in Sources */,
 				1D007F5D1B6D155B00EA119C /* SXWeatherDetailEntity.m in Sources */,
 				1D58EEC81A70924A00411E39 /* SXNewsEntity.m in Sources */,
@@ -1268,7 +1304,7 @@
 					"$(inherited)",
 					"-lz",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophia.netease.news;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophia.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1305,7 +1341,7 @@
 					"$(PROJECT_DIR)/CrabCrashReportSDK",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sophia.netease.news;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophia.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

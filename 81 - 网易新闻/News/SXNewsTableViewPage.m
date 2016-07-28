@@ -165,8 +165,8 @@
 {
     // 刚选中又马上取消选中，格子不变色
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UIViewController *vc = [[UIViewController alloc]init];
-    vc.view.backgroundColor = [UIColor yellowColor];
+//    UIViewController *vc = [[UIViewController alloc]init];
+//    vc.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

@@ -20,8 +20,9 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AppDynamicsAgent (42.3.1)
   - Bugly (2.2.3)
-  - Crashlytics (3.7.1):
+  - Crashlytics (3.7.2):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
   - FDFullscreenPopGesture (1.1)
@@ -36,13 +37,18 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - Reveal-iOS-SDK (1.6.2)
+  - Ruxit (0.9.5):
+    - Ruxit/framework (= 0.9.5)
+  - Ruxit/framework (0.9.5)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - tingyunApp (2.3.6)
   - UITableView+FDTemplateLayoutCell (1.4)
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
+  - AppDynamicsAgent (= 42.3.1)
   - Bugly (= 2.2.3)
   - Crashlytics
   - Fabric
@@ -52,13 +58,16 @@ DEPENDENCIES:
   - NewRelicAgent (= 5.5.2)
   - ReactiveCocoa (= 2.5)
   - Reveal-iOS-SDK
+  - Ruxit
   - SDWebImage (= 3.7.5)
+  - tingyunApp (~> 2.3.5)
   - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AppDynamicsAgent: 95e718c6753d4031645e1bb6274b8d716dbdda02
   Bugly: db578ea92b2a6b132cc19f79adf3bcd3b0fe6769
-  Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   MJExtension: 90503779f5c2608b76b5b0f41efdb05c080d1976
@@ -66,9 +75,11 @@ SPEC CHECKSUMS:
   NewRelicAgent: 7393668f5d3410982be933fe7ad81f70da6c4b1e
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  Ruxit: e0852c421c013931c3bb818058dfbabf1096c8bb
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  tingyunApp: d43e20d2506bfcf54e30dc36e75782c05494e3a5
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 3b2a2b5861cd9a310718c93eeb717e6ac46d8c94
+PODFILE CHECKSUM: d9fa3b29843afbcf76d70ebc09df641e22851906
 
 COCOAPODS: 1.0.0
